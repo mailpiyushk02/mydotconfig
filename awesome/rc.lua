@@ -58,7 +58,7 @@ end
 beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/mytheme/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "alacritty"
+terminal = "kitty"
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -355,7 +355,7 @@ globalkeys = gears.table.join(
 	end, { description = "run rofi", group = "launcher" }),
 
 	awful.key({ modkey }, "b", function()
-		awful.spawn("brave-browser")
+		awful.spawn("brave")
 	end, { description = "open default browser", group = "launcher" }),
 
 	awful.key({ modkey }, "e", function()
