@@ -355,7 +355,7 @@ globalkeys = gears.table.join(
 	end, { description = "run rofi", group = "launcher" }),
 
 	awful.key({ modkey }, "b", function()
-		awful.spawn("brave")
+		awful.spawn("brave-browser")
 	end, { description = "open default browser", group = "launcher" }),
 
 	awful.key({ modkey }, "e", function()
